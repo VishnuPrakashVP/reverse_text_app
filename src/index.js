@@ -1,17 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./style.css";
+import ReverseWordsApp from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<h1 className="headerTxt">REVERSE STRING GENERATOR</h1>, document.getElementById("head"));
+
+ReactDOM.render(<ReverseWordsApp />, document.getElementById("root"));
+
+ReactDOM.render(<div className="footerTxt">
+    <a href="/" className="icon icon1"><i class="fa-brands fa-github"></i></a>
+    <a href="/" className="icon icon2"><i class="fa-brands fa-instagram"></i></a>
+    <a href="/" className="icon icon3"><i class="fa-brands fa-twitter"></i></a>
+</div>, document.getElementById("foot"));
+
+

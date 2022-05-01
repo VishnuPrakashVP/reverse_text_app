@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    backdrop-filter: blur(10px);
+    background-image: linear-gradient(#0f0c29, #302b63, #24243e);
+}
+
+.app{
+    width: 600px;
+    height:400px;
+    background-image: linear-gradient(#8E2DE2, #4A00E0 );
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px rgb(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.inputFld{
+    width:300px;
+    height: 40px;
+    border: 0;
+    border-bottom: 2px solid white;
+    /* border-radius: 10px; */
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    background-color: transparent;
+    font-family: 'Poppins';
+    font-size: 1.2em;
+    padding: 2px 10px ;
+    color: white;
+    text-align: center;
+
+
+}
+
+.inputFld:focus{
+    background-color: transparent;
+    border: none;
+    /* border-radius: 10px; */
+    outline: none;
+    border-bottom:2px solid aqua;
+}
+
+
+.label{
+    position: relative;
+    top: 25px;
+    left: 0;
+    color: white;
+    z-index: -2;
+    font-size: 1.2em;
+    transition: all ease-in-out 200ms;
+}
+
+.top .inputFld:focus + #move, .top .inputFld:valid + #move {
+    top: -15px;
+    color: rgba(255, 255, 255, 0.397);
+
+}
+
+.bottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.output{
+    background-color: transparent;
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+    font-size: 1.2em;
+    color: white;
+    transform: translateY(40px);
+}
+
+
+.headerTxt{
+    position: relative;
+    color: white;
+    font-size: 4em;
+    margin-bottom: 90px;
+    top: -20px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    white-space: nowrap;
+}
+.footerTxt{
+    color: white;
+    position: relative;
+    top: 50px;
+    display: flex;
+}
+.footerTxt .icon {
+    font-size: 35px;
+    padding: 50px 40px;
+}
+.main-icon{
+    position: absolute;
+    top: 35%;
+    z-index: 1000;
+    font-size: 30px;
+    color: white;
+}
+.icon:hover{
+   color: aqua;
+   cursor: pointer;
+
+}
+
+a{
+    color: white;
+   
+}
+.icon{
+    width: 10px;
+    margin: 15px 15px;
+}
