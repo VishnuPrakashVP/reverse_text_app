@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Reverse Text Generator
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+This is my first project using React and was given as an assignment by my tutor on the first day of React.  I really enjoyed using React and it's easy to understand but I have got a lot more to learn. 
+
+
+If you want a quick glance at the working of this app, there is a screenrecording uploaded in the main branch.
 
 ## Available Scripts
 
